@@ -17,7 +17,7 @@
     <ApplicationIcon>SfPdfViewerExtensions.ico</ApplicationIcon>
     <PackageIcon>SfPdfViewerExtensions.png</PackageIcon>
     <Description>Useful Extensions for Syncfusion Xamarin.Forms PDF Viewer Component (SfPdfViewer), to get the size and orientation of the PDF, per page.</Description>
-    <Version>1.0.0.2</Version>
+    <Version>1.0.0.3</Version>
     <PackageReadmeFile>NuGet-Readme.md</PackageReadmeFile>
   </PropertyGroup>
 

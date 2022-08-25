@@ -23,14 +23,14 @@ Feel free to contribute to the Source Code at: https://github.com/mikeirvingweb/
     // get Size of Page 1. returns Size
     Size pageSize = sfPdfViewer.PageSize(1);
     
-    // get Width of Page 1. returns int
+    // get Width of Page 1. returns int, returns -1 if an error should occur
     int pageWidth = sfPdfViewer.PageWidth(1);
     
-    // get Height of Page 1. returns int
+    // get Height of Page 1. returns int, returns -1 if an error should occur
     int pageHeight = sfPdfViewer.PageHeight(1);
     
-    // is Page 1 Landscape? returns bool
+    // is Page 1 Landscape? returns bool, returns false if an error should occur
     bool pageIsLandscape = sfPdfViewer.PageIsLandscape(1);
     
-    // is Page 1 Portrait? returns bool
+    // is Page 1 Portrait? returns bool, returns false if an error should occur
     bool pageIsPortrait = sfPdfViewer.PageIsPortrait(1);

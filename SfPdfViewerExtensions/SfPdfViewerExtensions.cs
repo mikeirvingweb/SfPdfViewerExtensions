@@ -12,26 +12,54 @@ namespace SfPdfViewerExtensions
 
         public static int PageWidth(this SfPdfViewer sfPdfViewer, int page)
         {
-            return PageSize(sfPdfViewer, page).Width;
+            try
+            {
+                return PageSize(sfPdfViewer, page).Width;
+            }
+            catch(Exception ex)
+            {
+                return -1;
+            }
         }
 
         public static int PageHeight(this SfPdfViewer sfPdfViewer, int page)
         {
-            return PageSize(sfPdfViewer, page).Height;
+            try
+            {
+                return PageSize(sfPdfViewer, page).Height;
+            }
+            catch (Exception ex)
+            {
+                return -1;
+            }
         }
 
         public static bool PageIsLandscape(this SfPdfViewer sfPdfViewer, int page)
         {
-            var pageSize = PageSize(sfPdfViewer, page);
+            try
+            {
+                var pageSize = PageSize(sfPdfViewer, page);
 
-            return pageSize.Width > pageSize.Height;
+                return pageSize.Width > pageSize.Height;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
         public static bool PageIsPortrait(this SfPdfViewer sfPdfViewer, int page)
         {
-            var pageSize = PageSize(sfPdfViewer, page);
+            try
+            {
+                var pageSize = PageSize(sfPdfViewer, page);
 
-            return pageSize.Height > pageSize.Width;
+                return pageSize.Height > pageSize.Width;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
     }
 }
