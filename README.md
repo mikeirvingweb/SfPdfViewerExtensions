@@ -20,6 +20,8 @@ Written to address shortcomings in the core functionality of [SfPdfViewer](https
 
 📦 Add the [SfPdfViewerExtensions NuGet Package](https://www.nuget.org/packages/SfPdfViewerExtensions) to your C# Solution in [Visual Studio](https://visualstudio.microsoft.com/).
 
+🖥️ Command Line `dotnet add PROJECT package SfPdfViewerExtensions`
+
 ⚒️ Alternatively, clone this repository or take the `SfPdfViewerExtensions.cs` file from it.
 
 ✏️ Utilise the Extension Methods.
